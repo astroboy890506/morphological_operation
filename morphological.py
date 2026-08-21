@@ -44,11 +44,11 @@ def main():
 
         with col1:
             st.subheader("Original Image")
-            st.image(cv2.cvtColor(imgDigit, cv2.COLOR_BGR2RGB), use_column_width=True)
+            st.image(cv2.cvtColor(imgDigit, cv2.COLOR_BGR2RGB), use_container_width=True)
 
         with col2:
             st.subheader(f"{operation} Filtered Image")
-            st.image(cv2.cvtColor(result, cv2.COLOR_BGR2RGB), use_column_width=True)
+            st.image(cv2.cvtColor(result, cv2.COLOR_BGR2RGB), use_container_width=True)
 
 if __name__ == "__main__":
     main()
