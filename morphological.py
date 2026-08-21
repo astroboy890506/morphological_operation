@@ -26,7 +26,7 @@ def main():
         imgDigit = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
 
         st.sidebar.subheader("Original Digit Image")
-        st.sidebar.image(cv2.cvtColor(imgDigit, cv2.COLOR_BGR2RGB), use_column_width=True)
+        st.sidebar.image(cv2.cvtColor(imgDigit, cv2.COLOR_BGR2RGB), use_container_width=True)
 
         if operation == "Erosion":
             result = cv2.erode(imgDigit, kernel, iterations=iterations)
